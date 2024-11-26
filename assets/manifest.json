@@ -1,0 +1,10 @@
+{
+    "name": "Emerson Ribeiro",
+    "short_name": "Portfólio",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "description": "Projeto desenvolvido no curso Flet 360 do Programador Aventureiro!",
+    "orientation": "natural"
+}
