@@ -63,19 +63,19 @@ class SidebarContent(ft.UserControl):
 
         languages = ft.Row(
             controls=[
-                SkillRing(title='Português', value=1),
-                SkillRing(title='Inglês', value=0.1),
-                SkillRing(title='Espanhol', value=0.15),
+                SkillRing(title='Português', value=1).build(),
+                SkillRing(title='Inglês', value=0.1).build(),
+                SkillRing(title='Espanhol', value=0.15).build(),
             ]
         )
 
         skills = ft.Column(
             controls=[
-                SkillProgressBar(title='HTML', value=0.1),
-                SkillProgressBar(title='CSS', value=0.15),
-                SkillProgressBar(title='PYTHON', value=0.51),
-                SkillProgressBar(title='JS', value=0.18),
-                SkillProgressBar(title='PHP', value=0.16),
+                SkillProgressBar(title='HTML', value=0.1).build(),
+                SkillProgressBar(title='CSS', value=0.15).build(),
+                SkillProgressBar(title='PYTHON', value=0.51).build(),
+                SkillProgressBar(title='JS', value=0.18).build(),
+                SkillProgressBar(title='PHP', value=0.16).build(),
             ]
         )
 

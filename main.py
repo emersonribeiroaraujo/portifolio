@@ -48,11 +48,11 @@ class AppTheme:
             track_visibility=False,
             thumb_visibility=False,
             track_color={
-                ft.MaterialState.DEFAULT: ft.colors.TRANSPARENT,
+                ft.ControlState.DEFAULT: ft.colors.TRANSPARENT,
             },
             thumb_color={
-                ft.MaterialState.HOVERED: ft.colors.TRANSPARENT,
-                ft.MaterialState.DEFAULT: ft.colors.TRANSPARENT,
+                ft.ControlState.HOVERED: ft.colors.TRANSPARENT,
+                ft.ControlState.DEFAULT: ft.colors.TRANSPARENT,
             }
         )
     )
@@ -62,7 +62,7 @@ class App:
     def __init__(self, page: ft.Page):
         self.page = page
         self.page.theme = AppTheme.theme
-        self.page.on_resize = self.show_app_bar
+        self.page.__on_resized = self.show_app_bar
         self.page.bgcolor = ft.colors.BLACK
         self.main()
         self.show_app_bar()
